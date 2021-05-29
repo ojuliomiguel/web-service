@@ -1,0 +1,7 @@
+book-api/node_modules
+book-api/build
+book-api/coverage
+.vscode
+.DS_STORE
+book-api/.env
+
