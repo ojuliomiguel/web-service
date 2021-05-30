@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Lista de livros</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+	<header class="cabecalho">
+		<div class="conteudo">
+			<div class="menu">
+				<nav>
+					<a href="index.html">Home</a>
+					<a href="form.html"> Cadastro</a>
+					<a href="listando.html">Listar Acervo</a>
+					<a href="editeOuDelete.html">Editar/Excluir</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="w3-container">
+		<h2>Livros</h2>
+		<p>Listando diretamente do acervo</p>
+	  
+		<table id="tabela" class="w3-table w3-striped">
+		  <tr>
+			<th>ID</th>
+			<th>Titulo</th>
+			<th>Autor</th>
+			<th>Editora</th>
+			<th>Ano</th>
+		  </tr>
+		</table>
+	</div>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../handleListar.js"></script>
+
+</html>

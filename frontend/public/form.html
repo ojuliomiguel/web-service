@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>cadastro</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+	<header class="cabecalho">
+		<div class="conteudo">
+			<div class="menu">
+				<nav>
+					<a href="index.html">Home</a>
+					<a href link-nav="form.html"> Cadastro</a>
+					<a href="listando.html">Listar Acervo</a>
+					<a href="editeOuDelete.html">Editar/Excluir</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="w3-card-4 ">
+		<div class="w3-container w3-grey w3-padding-16 ">
+			<h2>Cadastro de livros</h2>
+		</div>
+		<form id="formElement" class="w3-container w3-margin">
+			<p>
+				<label class="w3-text-brown"><b>Titulo</b></label>
+				<input id="titulo" class="w3-input w3-border w3-sand " name="titulo" type="text">
+			</p>
+			<p>
+				<label class="w3-text-brown"><b>Autor</b></label>
+				<input id="autor" class="w3-input w3-border w3-sand" name="autor" type="text">
+			</p>
+			<p>
+			<p>
+				<label class="w3-text-brown"><b>Editora</b></label>
+				<input id="editora" class="w3-input w3-border w3-sand" name="editora" type="text">
+			</p>
+			<p>
+			<p>
+				<label class="w3-text-brown"><b>Ano</b></label>
+				<input id="cadastro" class="w3-input w3-border w3-sand" name="ano" type="date">
+			</p>
+			<p>
+				<button class="w3-btn w3-grey">Cadastrar</button>
+			</p>
+		</form>
+	</div>
+</body>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../handleCadastro.js"></script>
+
+</html>

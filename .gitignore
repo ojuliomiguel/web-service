@@ -4,4 +4,4 @@ book-api/coverage
 .vscode
 .DS_STORE
 book-api/.env
-
+frontend/node_modules

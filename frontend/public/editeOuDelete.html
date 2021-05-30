@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>cadastro</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+	<header class="cabecalho">
+		<div class="conteudo">
+			<div class="menu">
+				<nav>
+					<a href="index.html">Home</a>
+					<a href link-nav="form.html"> Cadastro</a>
+					<a href="listando.html">Listar Acervo</a>
+                    <a href="editeOuDelete.html">Editar/Excluir</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+    <div class="w3-container">
+        <h2>Editar ou Deletar</h2>
+        <input id="pesquisa" class=" w3-border w3-padding" type="text" placeholder="Digite o id do livro" id="myInput">
+        <button id="bnt" class="w3-button w3-white w3-border">Buscar</button>
+
+        <form id="formElement" w3-margin">
+			<input type="hidden" id="id" class="w3-input w3-border w3-sand " name="id" >
+			<p>
+				<label class="w3-text-brown"><b>Titulo</b></label>
+				<input disabled id="titulo" class="w3-input w3-border w3-sand " name="titulo" type="text">
+			</p>
+			<p>
+				<label class="w3-text-brown"><b>Autor</b></label>
+				<input disabled id="autor" class="w3-input w3-border w3-sand" name="autor" type="text">
+			</p>
+			<p>
+			<p>
+				<label class="w3-text-brown"><b>Editora</b></label>
+				<input disabled id="editora" class="w3-input w3-border w3-sand" name="editora" type="text">
+			</p>
+			<p>
+			<p>
+				<label class="w3-text-brown"><b>Ano</b></label>
+				<input disabled id="ano" class="w3-input w3-border w3-sand" name="ano" type="datetime">
+			</p>
+			<p>
+				<button id="bntEditar" disabled class="w3-btn w3-blue">Editar</button>
+                <button id="bntDeletar" disabled class="w3-btn w3-red">Deletar</button>
+			</p>
+    </div>
+	
+</body>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script src="../handleBuscar.js"></script>
+<script src="../handleEditar.js"></script>
+<script src="../handleDelete.js"></script>
+
+
+
+</html>
