@@ -1,4 +1,4 @@
-async function handleEditar() {
+async function handleDeletar() {
     event.preventDefault();
     
     try {
@@ -8,7 +8,7 @@ async function handleEditar() {
             const result = await axios.delete(`http://127.0.0.1:7000/livros/${campoId.value}`) 
             alert(result.data.message)
 
-            const inputs = document.querySelectorAll('.w3-input')
+            const inputs = document.querySelectorAll('.w3-input') //css
 
             inputs.forEach(input => {
                 input.disabled = true;
@@ -25,4 +25,4 @@ async function handleEditar() {
 }
 
 const btnDelete = document.getElementById('bntDeletar');
-btnDelete.addEventListener('click', handleEditar);
+btnDelete.addEventListener('click', handleDeletar);

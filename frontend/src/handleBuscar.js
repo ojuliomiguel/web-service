@@ -2,7 +2,7 @@ async function handleBuscar(event) {
     event.preventDefault();
     campoPesquisa = document.getElementById('pesquisa');
     
-    if (!campoPesquisa.value) return alert('Campo de busca vazio')
+    if (!campoPesquisa.value) return alert('Campo de busca vazio') //verificação de valor do campo
 
     try {
         const result = await axios.get(`http://127.0.0.1:7000/livros/${campoPesquisa.value}`) 
@@ -14,16 +14,16 @@ async function handleBuscar(event) {
             let campoEditora = document.getElementById('editora')
             let campoAno = document.getElementById('ano')
 
-            const inputs = document.querySelectorAll('.w3-input')
+            const inputs = document.querySelectorAll('.w3-input') // css
 
-            inputs.forEach(input => {
+            inputs.forEach(input => { //liberando os campos
                 input.disabled = false;
             });
 
-            const bntEditar =  document.getElementById('bntEditar')
+            const bntEditar =  document.getElementById('bntEditar') //libera
             bntEditar.disabled = false;
 
-            const bntDeletar =  document.getElementById('bntDeletar')
+            const bntDeletar =  document.getElementById('bntDeletar') //libera
             bntDeletar.disabled = false;
 
             let dados = [campoId, campoTitulo, campoAutor, campoEditora, campoAno];
